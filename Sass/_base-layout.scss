@@ -1,0 +1,104 @@
+//自訂
+.info {
+    .base-header & {
+        > .bg-drop-layout > .in,
+        > .in {
+            > .hd {
+                > .in {}
+                h3 {}
+                span {}
+                a {}
+            }
+            > .ct {
+                > .in {
+                    &:after {
+                        @extend %clear;
+                    }
+                }
+            }
+        }
+    }
+    .base-content & {
+        > .bg-drop-layout > .in,
+        > .in {
+            > .hd {
+                display: none;
+                > .in {}
+                h3 {}
+                span {}
+                a {}
+            }
+            > .ct {
+                > .in {
+                    // text-align: right;
+                    // margin-bottom: $interval-m;
+                }
+            }
+        }
+    }
+    .base-footer & {
+        display: none;
+        > .bg-drop-layout > .in,
+        > .in {
+            padding: $interval-xl $interval-l;
+            margin: 0 auto;
+            width: 1000px;
+            box-sizing: border-box;
+            @include rwd(1000) {
+                width: 100%;
+            }
+            > .hd {
+                display: none;
+                > .in {}
+                h3 {}
+                span {}
+                a {}
+            }
+            > .ct {
+                position: relative;
+                > .in {
+                    &:after {
+                        @extend %clear;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.msg-tool {
+    .base-header & {
+        position: relative;
+        > .bg-drop-layout > .in,
+        > .in {
+            > .hd {
+                > .in {}
+                h3 {}
+                span {}
+                a {}
+            }
+            > .ct {
+                > .in {}
+            }
+        }
+    }
+    .base-footer & {
+        overflow: hidden;
+        > .bg-drop-layout > .in,
+        > .in {
+            > .hd {
+                > .in {}
+                h3 {}
+                span {}
+                a {}
+            }
+            > .ct {
+                > .in {}
+            }
+        }
+    }
+}
+
+// 台鐵
+
+

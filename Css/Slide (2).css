@@ -1,0 +1,177 @@
+﻿@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2014-03-07 11:39:30
+ * @version $Id$
+ */
+
+ul, li {margin: 0;padding: 0;list-style: none;}
+
+.organize{font-size:13px; line-height:1.5em; position:relative; font-family:/*"微軟正黑體",*/ Arial; margin-top:32px;}
+.organize .tabs1, .organize .tabs2{
+	margin-bottom:0; 
+	position:absolute; 
+	z-index:50; 
+	top:-31px; 
+	width:105px; 
+	height:30px;
+	margin-bottom: -1px;
+	border: 1px solid #CCC;
+	background:#C7E0ED;
+}
+.organize .tabs1{ left:0;}
+.organize .tabs2{ left:106px;}
+.organize .tabs1 a, .organize .tabs2 a{
+	display:block; 
+	color: #034F82;
+	border: 1px solid #fff;
+	text-decoration: none; 
+	font-weight:bold;
+	height:31px;
+	line-height:33px;
+	text-align:center;
+}
+.organize .tabs1 a:hover, .organize .tabs2 a:hover {background: #13789C; color:#FFF;}
+.organize .active{
+	background: #fff; 
+	border-bottom: 1px solid #fff; 
+	border-bottom:1px solid #FFF; 
+	cursor:default;
+}
+.organize .active a:hover {
+	background: #fff; 
+	color: #034F82;
+}
+.tab_container{ position:relative; clear:left; width:100%; border:1px solid #CCC; background: #fff; padding: 20px 10px 15px 10px;}
+
+.introBox{ position:relative;}
+.introBox .tabs1, .introBox .tabs2{top:32px; border-bottom:1px solid #CCC;}
+.introBox .tabs1{ left:20;}
+.introBox .tabs2{ left:106px;}
+.introBox .active a:hover{ background-color:transparent;}
+.introBox .tab_container{ position:relative; width:auto; padding: 20px 10px 30px 10px; margin-top:33px; margin-bottom:20px; border:none; border-top:1px solid #CCC; border-bottom: 4px solid #DDD; line-height:1.6em; margin-top:33px; }
+
+/*組織與執掌--------------------------------------*/
+/*--no.1---------------*/
+.minister {
+    text-align: center;
+    position: relative;
+}
+.minister a.m_link {
+	background:url(../images/title_bg04.jpg) repeat-x;
+    padding: 8px 30px;
+    display: inline-block;
+    color: #FFF;
+    text-decoration: none;
+    -webkit-border-radius: 5px;  
+	-moz-border-radius: 5px;  
+	border-radius: 5px;
+	font-size:15px;
+	letter-spacing:3px;
+	font-weight:bold;
+	box-shadow: 0px 2px 5px #888888;
+-webkit-box-shadow: 0px 2px 5px #888888;
+-moz-box-shadow: 0px 2px 5px #888888;
+}
+.minister a.m_link:hover{background:url(../images/title_bg06.jpg) repeat-x;} 
+.minister a.text_link {
+    position: absolute;
+    top: 10px;
+    right: 170px;
+    color: #034F82;
+	text-decoration:none;
+	font-size:15px;
+}
+.minister a.text_link:hover{ color:#F90;}
+
+/*--no.2---------------*/
+.exMinister {
+    text-align: center;
+    display: inline-block;
+	background:url(../images/bigarr01.png) no-repeat center bottom;
+	padding-bottom:30px;
+}
+.exMinister a.m_link {
+	background:url(../images/title_bg05.jpg) repeat-x;  
+	padding: 8px 25px;  
+	display: inline-block;  
+	color: #FFF;  
+	text-decoration: none;  
+	-webkit-border-radius: 5px;  
+	-moz-border-radius: 5px;  
+	border-radius: 5px;
+	font-size:15px;
+	letter-spacing:3px;
+	font-weight:bold;
+	box-shadow: 0px 2px 5px #888888;
+-webkit-box-shadow: 0px 2px 5px #888888;
+-moz-box-shadow: 0px 2px 5px #888888;
+
+}
+.exMinister a.m_link:hover{background:url(../images/title_bg06.jpg) repeat-x;}
+.minister .Arrow {
+    height: 20px;
+    width: 24px;
+    margin: 10px auto;
+	background:url(../images/bigarr01.png) no-repeat center center;
+}
+
+/*------no.3---*/
+.groups {
+    margin: 0 auto;
+    overflow: hidden;
+}
+.groups li {
+}
+
+.groups a.button {  
+     color: #034F82;
+    background: url(../images/title_bg07.jpg) repeat-x center;
+    text-decoration: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding: 6px 1px;
+    text-align: center;
+    display: table-cell;
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+}
+.groups a.button:hover{background:url(../images/title_bg06.jpg) repeat-x;color: #FFF;} 
+
+.introBox h2 {
+    color: #155498;
+    font-size: 1em;
+    margin:0;
+    padding:0px 10px 10px 10px;
+	font-size:15px;
+	font-weight:bold;
+	background:url(../images/CountryICon.png) no-repeat left 6px;
+}
+
+.introBox .link {
+    position: absolute;
+    top:33px;
+    right: -1px;
+    padding: 6px 22px;
+    background-color: #034F82;
+    color: #FFF !important;
+    text-decoration: none;
+	z-index:100;
+}
+.introBox .link:hover{ background-color:#1f92ce;}
+.introBox .source {
+    color: #929191;
+    text-align: right;
+    padding-top: 20px;
+    margin-bottom: -25px;
+}
+.des{font-size:13px;}
+.des li {
+    list-style-type: decimal;
+}
+.des ul {
+    margin-left: 20px;
+}

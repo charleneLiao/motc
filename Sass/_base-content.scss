@@ -1,0 +1,25 @@
+//框架
+//主要內容================================================================
+.base-content {
+    background-color: $white;
+    overflow: hidden;
+    margin-left: 200px;
+    @include rwd(1220) {
+        width: auto;
+    }
+    @include media("mobile") {
+        margin-left: 0px;
+    }
+    > .in {
+        > .hd {
+            > .in {}
+            h3 {}
+            span {}
+        }
+        > .ct {
+            > .in {
+                // min-height: 953px;
+            }
+        }
+    }
+}

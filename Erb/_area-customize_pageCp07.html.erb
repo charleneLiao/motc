@@ -1,0 +1,27 @@
+<div id="second_menucountry" class="second_menucountry">
+<h4>快速搜尋</h4>
+<div class="menu_contentcountry">
+<div class="openbtncountry" id="openmenuCountry" style="display: block;">
+<p>國家與地區</p>
+<a id="openCountry" href="javascript: return false;" onclick="menu('openmenuCountry');" onkeypress="menu('openmenuCountry');"></a>
+</div>
+<div class="closebtncountry" id="closemenuCountry" style="display: none;">
+<p>國家與地區</p>
+<a id="close" href="javascript: return false;" onclick="menu('closemenuCountry');" onkeypress="menu('closemenuCountry');"></a>
+</div>
+<div id="footermenuCountry" style="display: none;"> 
+<div style="font-size: 16px;">
+<div> 地 區：
+<select style="width:195px; margin:5px 0 20px 0;" data-bind="options: cities, optionsCaption: '選擇地區', value: city"><option value="">選擇地區</option><option value="亞太地區">亞太地區</option><option value="亞西地區">亞西地區</option><option value="非洲地區">非洲地區</option><option value="歐洲地區">歐洲地區</option><option value="北美地區">北美地區</option><option value="拉丁美洲及加勒比海地區">拉丁美洲及加勒比海地區</option></select>
+</div>
+<div> 國  家：
+<select style="width:195px;  margin:0 0 20px 0;" data-bind="options: areas, optionsCaption: '選擇國家', optionsText: 'text', optionsValue: 'value', value: areaZip"><option value="">選擇國家</option></select>
+</div>
+<div>
+關鍵字：<input style="width:119px;" id="uscSearch1_ComboBoxArea" data-bind="value: addrPrefix" type="text" name="UserName">
+<input id="searchbuttonArea" type="button" name="SB" value="查詢" style="margin:0 0 0 5px;">
+</div>
+</div>
+</div> 
+</div>
+</div>

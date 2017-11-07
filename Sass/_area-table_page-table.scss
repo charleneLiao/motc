@@ -1,0 +1,107 @@
+//表格區塊
+//內頁表格================================================================
+.area-table.page-table {
+    > .bg-drop-layout > .in,
+    > .in {}
+    .hd {
+        @extend %header;
+        > .in {}
+        h4 {}
+        span {}
+        a {}
+    }
+    .ct {
+        > .in {}
+        table {
+            width: 100%;
+            margin: 0 0 20px 0;
+            @include media('mobile') {
+                table-layout: fixed;
+            }
+        }
+        thead {
+            display: none;
+        }
+        tbody {
+            tr {
+                &:hover,
+                &:nth-child(even):hover {
+                    background-color: $tr-hover;
+                    color: #0636a2;
+                }
+                &:nth-child(even) {
+                    background-color: #f4f4f5;
+                }
+            }
+            th,
+            td {
+                border-bottom: 2px dotted #d5d5d5;
+                position: relative;
+            }
+            th {}
+            td {
+                padding: 10px 6px;
+                font-size: 1.1em;
+                letter-spacing: 1px;
+                &:first-child {
+                    padding-left: 23px;
+                    &:before {
+                        content: "";
+                        width: 12px;
+                        height: 12px;
+                        background: url(../Images/deco-list.png) no-repeat;
+                        display: inline-block;
+                        position: absolute;
+                        top: 45%;
+                        top: 39%;
+                        left: 10px;
+                    }
+                }
+                a {
+                    text-decoration: none;
+                }
+            }
+            .td-date {
+                width: 16%;
+                text-align: center;
+                font-size: 1em;
+            }
+            .td-unit {
+                width: 10%;
+                width: 70px;
+                span {
+                    padding: 3px;
+                    border: 1px solid #6874ce;
+                    color: #2234bb;
+                    font-size: 0.8em;
+                    border-radius: 3px;
+                    text-align: center;
+                    width: 70px;
+                }
+            }
+            .td-title {}
+        }
+        th {
+            font-weight: $font-weight-b;
+            text-align: center;
+        }
+        span {
+            display: block;
+        }
+        a {
+            text-decoration: underline;
+            &:hover {
+                text-decoration: none;
+                color: #0636a2;
+            }
+        }
+    }
+    .ft {
+        @extend %footer;
+        > .in {}
+        ul {}
+        li {}
+        span {}
+        a {}
+    }
+}

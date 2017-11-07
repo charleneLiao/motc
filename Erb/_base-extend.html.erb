@@ -1,0 +1,21 @@
+<div class="group base-extend" id="base-extend" data-index="<%= index %>" data-type="<%= $row %>" data-child="5"><div class="in">
+	<div class="ct"><div class="in">
+
+	<!-- logo 主要標誌 -->
+		<%= render partial: "/erb/simple-text_major-logo", locals: set({ index: 1, header_text: "標誌" }) %>
+	<!-- logo 結束 -->
+
+	<!-- accesskey 導盲磚 -->
+		<%= render partial: "/erb/simple-text_accesskey", locals: set({ access_key: "U", access_title: "上方選單連結區，此區塊列有本網站的主要連結", header_text: "導盲磚" }) %>
+	<!-- accesskey 結束 -->
+
+	<!-- link 連結 -->
+		<%= render partial: "/erb/list-text_link", locals: set({ index: 1, header_text: "上方連結" }) %>
+	<!-- link 結束 -->
+
+	<!-- search 搜尋 -->
+		<%#= render partial: "/erb/area-form_search", locals: set({ index: 4, func_set: "{'showDataList':{}}", header_text: "搜尋" }) %>
+	<!-- search 結束 -->
+
+	</div></div>
+</div></div>

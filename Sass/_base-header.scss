@@ -1,0 +1,23 @@
+//框架
+//頁首資訊================================================================
+.base-header {
+    width: 200px;
+    height: 100%;
+    float: left;
+    z-index: 2;
+    position: fixed;
+    background: $minor-color;
+    @include media('mobile') {
+        display: none;
+    }
+    > .in {
+        > .hd {
+            > .in {}
+            h3 {}
+            span {}
+        }
+        > .ct {
+            > .in {}
+        }
+    }
+}

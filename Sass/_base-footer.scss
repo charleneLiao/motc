@@ -1,0 +1,75 @@
+//框架
+//頁尾資訊================================================================
+.base-footer {
+    clear: both;
+    background-color: $major-color;
+    z-index: 5;
+    margin-left: 200px;
+    bottom: 0;
+    @include media("mobile") {
+        margin-left: 0px;
+    }
+    &.is-active {
+        > .in {
+            > .hd {
+                a {
+                    &:after {
+                        @include icon-font('play_circle_outline');
+                        transform: rotate(90deg);
+                        font-size: 1.3em;
+                        font-weight: lighter;
+                        margin: 2px 0 -1px 5px;
+                    }
+                }
+            }
+        }
+    }
+    > .in {
+        > .hd {
+            margin: 0 auto;
+            // width: 1000px;
+            @include js(false) {
+                display: none;
+            }
+            @include media('mobile') {
+                display: none;
+            }
+            > .in {
+                position: relative;
+            }
+            h3 {
+                position: absolute;
+                left: 0;
+                right: $interval-m;
+                bottom: -1px;
+                text-align: right;
+            }
+            span {
+                display: inline-block;
+            }
+            a {
+                display: none;
+                padding: $interval-l $interval-xl;
+                border-radius: $interval-s $interval-s 0 0;
+                background-color: #05336b;
+                color: $white;
+                font-size: $font-size-s;
+                text-decoration: none;
+                &:after {
+                    @include icon-font('play_circle_outline');
+                    transform: rotate(270deg);
+                    -webkit-transform: rotate(270deg);
+                    /* Safari */
+                    margin-left: $interval-xs;
+                    vertical-align: bottom;
+                    font-size: 1.3em;
+                    font-weight: lighter;
+                    margin: 2px 0 -1px 5px;
+                }
+            }
+        }
+        > .ct {
+            > .in {}
+        }
+    }
+}

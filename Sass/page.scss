@@ -1,0 +1,123 @@
+//內頁覆蓋
+@import 'sys_global'; //sass 基礎設定
+// 請注意！本 scss 所做設定皆只有內頁可見。
+// 若需要覆蓋主要樣式設定，請直接撰寫在以下區塊。
+.banner {
+    background: url("../Images/banner.png") no-repeat center 90%;
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    position: relative;
+    &:after {
+        content: "";
+        display: inline-block;
+        width: 100%;
+        height: 48px;
+        background: url("../Images/deco-banner.png") no-repeat bottom center;
+        background-size: cover;
+        position: absolute;
+        bottom: -48px;
+    }
+}
+
+.base-content {
+    > .in {
+        background: url(../Images/deco-ft.png) repeat-x center bottom;
+        min-height: 1000px !important;
+        &:after {
+            background: url(../Images/train.png) no-repeat center bottom;
+            content: "";
+            display: inline-block;
+            width: 100%;
+            height: 162px;
+            position: absolute;
+            bottom: 84px;
+        }
+        @include media("mobile") {
+            &:after {
+                background-position: 107% bottom;
+            }
+        }
+    }
+}
+
+.list-text.jump-tool {
+    margin: 20px auto 0 auto;
+    text-align: center;
+    width: 100%;
+    z-index: 2;
+    position: relative;
+}
+
+// 搜尋表單
+.area-customize.submit {
+    background: url("../Images/bg-form.png") no-repeat;
+    padding: 14px 22px;
+    @include rwd(1024) {
+        background: #e3e8fb;
+        border: 1px solid #cfd5ea;
+        border-radius: 3px;
+    }
+    .ct {
+        .fieldset {
+            display: inline-block;
+            select,
+            input {
+                padding: 10px;
+                font-size: 1em;
+            }
+            .select {
+                &:before {
+                    content: "";
+                    display: inline-block;
+                    width: 43px;
+                    height: 43px;
+                    background: url("../Images/icon-search.png") no-repeat;
+                    margin: -5px 12px -19px 0;
+                }
+            }
+            label {
+                padding: 10px;
+            }
+        }
+        .fieldset.btn {
+            // width: 177px;
+            float: right;
+            @include rwd(930) {
+                float: inherit;
+                width: 100%;
+                text-align: right;
+                margin: 12px 0 0 0;
+            }
+            input {
+                padding: 11px 18px;
+            }
+            &:after {
+                content: "";
+                display: inline-block;
+                // width: 177px;
+            }
+            .submit {
+                input[type=submit] {
+                    background: #1b3dbc;
+                    color: $white;
+                    &:hover {
+                        background: deeper(#1b3dbc);
+                    }
+                }
+            }
+            input[type=reset] {
+                background: $white;
+                color: #1b3dbc;
+                border-color: #1b3dbc;
+                &:hover {
+                    background: #1b3dbc;
+                    color: $white;
+                }
+            }
+        }
+        select {
+            // font-size: 1.1em;
+        }
+    }
+}

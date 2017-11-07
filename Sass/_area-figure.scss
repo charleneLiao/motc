@@ -1,0 +1,71 @@
+//圖片區塊
+
+//設定================================================================
+
+.area-figure {
+
+	> .bg-drop-layout > .in, > .in {
+
+	}
+
+	.hd {
+
+		> .in {
+
+		}
+
+		h4 {
+
+		}
+
+		span {
+				
+		}
+
+		a {
+
+		}
+	}
+
+	.ct {
+
+		> .in {
+			
+		}
+
+		img {
+			max-width: 100% !important;
+		}
+
+		table {
+			max-width: 100% !important;
+
+			@include media('mobile') {
+				table-layout: fixed;
+			}
+		}
+	}
+
+	.ft {
+
+		> .in {
+
+		}
+
+		ul {
+
+		}
+
+		li {
+
+		}
+
+		span {
+
+		}
+
+		a {
+
+		}
+	}
+}

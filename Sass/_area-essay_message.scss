@@ -1,0 +1,186 @@
+//文章區塊
+//訊息================================================================
+.area-essay.message {
+    margin: 0 $interval-xs;
+    > .bg-drop-layout > .in,
+    > .in {
+        padding: 0 !important;
+    }
+    .hd {
+        @extend %header;
+        > .in {}
+        h4 {}
+        span {}
+        a {}
+    }
+    .ct {
+        > .in {}
+        /*a*/
+        .div {
+            padding: 10px;
+            background-color: $white;
+            border: 1px solid $major-color;
+            transition: $transition;
+            overflow: hidden;
+            &:hover {
+                background-color: $light;
+                .p p,
+                .caption {
+                    &:after {
+                        background-image: linear-gradient(to right, transparent 0, $light 60%);
+                    }
+                }
+            }
+            @include media("mobile") {
+                &:hover {
+                    .p p,
+                    .caption {
+                        &:after {
+                            background-image: url("../Images/mask-hover.png");
+                        }
+                    }
+                }
+            }
+        }
+        .img {
+            margin-bottom: $interval-m;
+            float: left;
+            @include media("mobile") {
+                float: initial;
+            }
+            span {
+                display: block;
+                width: 192px;
+                height: 127px;
+                overflow: hidden;
+                background-image: none !important;
+                @include rwd(900) {
+                    height: 88px;
+                }
+                @include media("mobile") {
+                    height: 295px;
+                    width: 100%;
+                }
+                @include rwd(568) {
+                    height: 250px;
+                }
+                @include media("phone") {
+                    height: 180px;
+                }
+                @include rwd(320) {
+                    height: 133px;
+                }
+            }
+            img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                @include media("pad") {
+                    height: auto;
+                }
+                @include media("phone") {
+                    height: auto;
+                }
+            }
+        }
+        .essay {
+            overflow: hidden;
+            position: relative;
+            padding: 20px 15px 0px;
+        }
+        .caption {
+            @extend %caption;
+            @extend %ellipsis;
+            margin-top: 6px;
+            font-weight: bold;
+            span {}
+            @include media("mobile") {
+                &:after {
+                    background-image: url("../Images/mask.png");
+                }
+                &:hover {
+                    &:after {
+                        background-image: url("../Images/mask-hover.png");
+                        content: none;
+                    }
+                }
+            }
+        }
+        .caption,
+        .p p {
+            float: none;
+        }
+        .label {
+            @extend %label;
+            ul {}
+            li {}
+            span {}
+        }
+        /*i*/
+        .mark {
+            @extend %mark;
+            padding: 0;
+            position: absolute;
+            line-height: 30px;
+            top: 0;
+        }
+        .p {
+            @extend %paragraph;
+            p {
+                line-height: 1.5em;
+                margin: 20px 0 0 0;
+                @include multi-ellipsis( 3,
+                20px);
+                @include rwd(1024) {
+                    &:after {
+                        background-image: url("../Images/mask.png");
+                    }
+                }
+            }
+            span {}
+        }
+    }
+    .ft {
+        @extend %footer;
+        > .in {}
+        ul {}
+        li {}
+        span {}
+        a {}
+    }
+}
+
+// 英文網
+.base-wrapper-en .area-essay.message {
+    .caption {
+        @include multi-ellipsis( 2,
+        20px);
+        span {
+            text-overflow: clip;
+            white-space: normal;
+        }
+        @include rwd(1024) {
+            &:after {
+                background-image: url("../Images/mask.png");
+            }
+            &:hover {
+                &:after {
+                    background-image: url("../Images/mask-hover.png");
+                }
+            }
+        }
+    }
+    .p {
+        p {
+            @include multi-ellipsis( 2,
+            20px);
+            line-height: 1.5em;
+            margin: 20px 0 0 0;
+            @include rwd(1024) {
+                &:after {
+                    background-image: url("../Images/mask.png");
+                }
+            }
+        }
+    }
+}

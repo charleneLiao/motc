@@ -1,0 +1,82 @@
+//客製區塊
+
+//朗誦================================================================
+
+.area-customize.recitation {
+	vertical-align: middle;
+	display: inline-block;
+
+	> .bg-drop-layout > .in, > .in {
+
+	}
+
+	.hd {
+		display: none;
+
+		> .in {
+
+		}
+
+		h4 {
+			
+		}
+
+		span {
+
+		}
+
+		a {
+
+		}
+	}
+
+	.ct {
+
+		> .in {
+
+		}
+
+		#media {
+
+			div {
+				padding: 1px;
+				cursor: pointer;
+				border-radius: $border-radius;
+
+				img {
+					display: block;
+					width: 22px !important;
+					height: 22px !important;
+					transition: $transition;
+				}
+			}
+
+			&:hover {
+				background-color: $light;
+			}
+		}
+	}
+
+	.ft {
+
+		> .in {
+
+		}
+
+		ul {
+
+		}
+
+		li {
+
+		}
+
+		span {
+
+		}
+
+		a {
+
+		}
+	}
+}

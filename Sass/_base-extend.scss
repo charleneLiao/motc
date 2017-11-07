@@ -1,0 +1,39 @@
+//框架
+//額外資訊================================================================
+.base-extend {
+    padding: 9px $interval-xl;
+    background-color: rgba($black , 0.7);
+    color: $white;
+    text-align: right;
+    z-index: 1 !important;
+    box-sizing: border-box;
+    position: relative;
+    // margin-left: 200px;
+    @include media('mobile') {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 0;
+        background-color: $minor-color;
+        z-index: 1;
+        height: 60px;
+    }
+    > .in {
+        // width: 1000px;
+        margin: 0 auto;
+        @include media('mobile') {
+            // margin-left: $rwd-btn-size;
+            width: 100%;
+        }
+        > .hd {
+            display: none;
+            > .in {}
+            h3 {}
+            span {}
+        }
+        > .ct {
+            > .in {}
+        }
+    }
+}

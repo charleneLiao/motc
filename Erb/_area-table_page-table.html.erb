@@ -1,0 +1,76 @@
+<%
+	min_cell = 2 #最少的欄數量
+	max_cell = 6 #最多的欄數量
+	min_row = 3 #最少的行數量
+	max_row = 12 #最多的行數量
+	min_text = 3 #最少的字元
+	max_text = 8 #最多的字元
+
+	cell_length = (min_cell..max_cell).to_a.sample
+	row_length = (min_row..max_row).to_a.sample
+%>
+
+<div class="area-table page-table <% if class_set %><%= class_set %><% end %>" data-index="<%= index %>" data-type="<%= $module %>" <% if func_set %> data-func="<%= func_set %>"<% end %> ><div class="in">
+	<% if header_text %>
+		<div class="hd"><div class="in">
+			<h4><span><a href="#"><%= header_text %></a></span></h4>
+		</div></div>
+	<% end %>
+	<div class="ct"><div class="in">
+<table>
+    <tbody data-index="2" data-child="7">
+        <tr data-index="1" data-child="3">
+            <td class="td-date"><span>106-01-26</span></td>
+            <td class="td-unit"><span>政風室</span></td>
+            <td class="td-title"><span><a href="#">本局兼辦政風業務人員設置要點及遴薦表</a></span></td>
+        </tr>
+        <tr data-index="2" data-child="3">
+           <td class="td-date"><span>105-08-08</span></td>
+            <td class="td-unit"><span>政風室</span></td>
+            <td class="td-title"><span><a href="#">104年廉政平臺交流座談會(104.06.24北區場次)</a></span></td>
+        </tr>
+        <tr data-index="3" data-child="3">
+          <td class="td-date"><span>105-07-26</span></td>
+            <td class="td-unit"><span>政風室</span></td>
+            <td class="td-title"><span><a href="#">交通部105年廉潔正直楷模事蹟簡介</a></span></td>
+        </tr>
+        <tr data-index="1" data-child="3">
+            <td class="td-date"><span>106-01-26</span></td>
+            <td class="td-unit"><span>政風室</span></td>
+            <td class="td-title"><span><a href="#">本局兼辦政風業務人員設置要點及遴薦表</a></span></td>
+        </tr>
+        <tr data-index="2" data-child="3">
+           <td class="td-date"><span>105-08-08</span></td>
+            <td class="td-unit"><span>政風室</span></td>
+            <td class="td-title"><span><a href="#">104年廉政平臺交流座談會(104.06.24北區場次)</a></span></td>
+        </tr>
+        <tr data-index="3" data-child="3">
+          <td class="td-date"><span>105-07-26</span></td>
+            <td class="td-unit"><span>政風室</span></td>
+            <td class="td-title"><span><a href="#">交通部105年廉潔正直楷模事蹟簡介</a></span></td>
+        </tr>
+       <tr data-index="1" data-child="3">
+            <td class="td-date"><span>106-01-26</span></td>
+            <td class="td-unit"><span>政風室</span></td>
+            <td class="td-title"><span><a href="#">本局兼辦政風業務人員設置要點及遴薦表</a></span></td>
+        </tr>
+        <tr data-index="2" data-child="3">
+           <td class="td-date"><span>105-08-08</span></td>
+            <td class="td-unit"><span>政風室</span></td>
+            <td class="td-title"><span><a href="#">104年廉政平臺交流座談會(104.06.24北區場次)</a></span></td>
+        </tr>
+        <tr data-index="3" data-child="3">
+          <td class="td-date"><span>105-07-26</span></td>
+            <td class="td-unit"><span>政風室</span></td>
+            <td class="td-title"><span><a href="#">交通部105年廉潔正直楷模事蹟簡介</a></span></td>
+        </tr>
+        <tr data-index="1" data-child="3">
+            <td class="td-date"><span>106-01-26</span></td>
+            <td class="td-unit"><span>政風室</span></td>
+            <td class="td-title"><span><a href="#">本局兼辦政風業務人員設置要點及遴薦表</a></span></td>
+        </tr>
+    </tbody>
+</table>
+
+	</div></div>
+</div></div>

@@ -1,0 +1,295 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2014-03-07 11:39:30
+ * @version $Id$
+ */
+/* line 9, ../sass/Slide.scss */
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 11, ../sass/Slide.scss */
+.organize {
+  font-size: 13px;
+  line-height: 1.5em;
+  position: relative;
+  font-family: Arial;
+  margin-top: 32px;
+}
+
+/* line 12, ../sass/Slide.scss */
+.organize .tabs1, .organize .tabs2 {
+  margin-bottom: 0;
+  position: absolute;
+  z-index: 50;
+  top: -31px;
+  width: 105px;
+  height: 30px;
+  margin-bottom: -1px;
+  border: 1px solid #CCC;
+  background: #C7E0ED;
+}
+
+/* line 23, ../sass/Slide.scss */
+.organize .tabs1 {
+  left: 0;
+}
+
+/* line 24, ../sass/Slide.scss */
+.organize .tabs2 {
+  left: 106px;
+}
+
+/* line 25, ../sass/Slide.scss */
+.organize .tabs1 a, .organize .tabs2 a {
+  display: block;
+  color: #034F82;
+  border: 1px solid #fff;
+  text-decoration: none;
+  font-weight: bold;
+  height: 31px;
+  line-height: 33px;
+  text-align: center;
+}
+
+/* line 35, ../sass/Slide.scss */
+.organize .tabs1 a:hover, .organize .tabs2 a:hover {
+  background: #13789C;
+  color: #FFF;
+}
+
+/* line 36, ../sass/Slide.scss */
+.organize .active {
+  background: #fff;
+  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #FFF;
+  cursor: default;
+}
+
+/* line 42, ../sass/Slide.scss */
+.organize .active a:hover {
+  background: #fff;
+  color: #034F82;
+}
+
+/* line 46, ../sass/Slide.scss */
+.tab_container {
+  position: relative;
+  clear: left;
+  width: 100%;
+  border: 1px solid #CCC;
+  background: #fff;
+  padding: 20px 10px 15px 10px;
+}
+
+/* line 48, ../sass/Slide.scss */
+.introBox {
+  position: relative;
+}
+
+/* line 49, ../sass/Slide.scss */
+.introBox .tabs1, .introBox .tabs2 {
+  top: 32px;
+  border-bottom: 1px solid #CCC;
+}
+
+/* line 50, ../sass/Slide.scss */
+.introBox .tabs1 {
+  left: 20;
+}
+
+/* line 51, ../sass/Slide.scss */
+.introBox .tabs2 {
+  left: 106px;
+}
+
+/* line 52, ../sass/Slide.scss */
+.introBox .active a:hover {
+  background-color: transparent;
+}
+
+/* line 53, ../sass/Slide.scss */
+.introBox .tab_container {
+  position: relative;
+  width: auto;
+  padding: 20px 10px 30px 10px;
+  margin-top: 33px;
+  margin-bottom: 20px;
+  border: none;
+  border-top: 1px solid #CCC;
+  border-bottom: 4px solid #DDD;
+  line-height: 1.6em;
+  margin-top: 33px;
+}
+
+/*組織與執掌--------------------------------------*/
+/*--no.1---------------*/
+/* line 57, ../sass/Slide.scss */
+.minister {
+  text-align: center;
+  position: relative;
+}
+
+/* line 61, ../sass/Slide.scss */
+.minister a.m_link {
+  background: url(../images/title_bg04.jpg) repeat-x;
+  padding: 8px 30px;
+  display: inline-block;
+  color: #FFF;
+  text-decoration: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 15px;
+  letter-spacing: 3px;
+  font-weight: bold;
+  box-shadow: 0px 2px 5px #888888;
+  -webkit-box-shadow: 0px 2px 5px #888888;
+  -moz-box-shadow: 0px 2px 5px #888888;
+}
+
+/* line 77, ../sass/Slide.scss */
+.minister a.m_link:hover {
+  background: url(../images/title_bg06.jpg) repeat-x;
+}
+
+/* line 78, ../sass/Slide.scss */
+.minister a.text_link {
+  position: absolute;
+  top: 10px;
+  right: 170px;
+  color: #034F82;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+/* line 86, ../sass/Slide.scss */
+.minister a.text_link:hover {
+  color: #F90;
+}
+
+/*--no.2---------------*/
+/* line 89, ../sass/Slide.scss */
+.exMinister {
+  text-align: center;
+  display: inline-block;
+  background: url(../images/bigarr01.png) no-repeat center bottom;
+  padding-bottom: 30px;
+}
+
+/* line 95, ../sass/Slide.scss */
+.exMinister a.m_link {
+  background: url(../images/title_bg05.jpg) repeat-x;
+  padding: 8px 25px;
+  display: inline-block;
+  color: #FFF;
+  text-decoration: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 15px;
+  letter-spacing: 3px;
+  font-weight: bold;
+  box-shadow: 0px 2px 5px #888888;
+  -webkit-box-shadow: 0px 2px 5px #888888;
+  -moz-box-shadow: 0px 2px 5px #888888;
+}
+
+/* line 112, ../sass/Slide.scss */
+.exMinister a.m_link:hover {
+  background: url(../images/title_bg06.jpg) repeat-x;
+}
+
+/* line 113, ../sass/Slide.scss */
+.minister .Arrow {
+  height: 20px;
+  width: 24px;
+  margin: 10px auto;
+  background: url(../images/bigarr01.png) no-repeat center center;
+}
+
+/*------no.3---*/
+/* line 121, ../sass/Slide.scss */
+.groups {
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* line 128, ../sass/Slide.scss */
+.groups a.button {
+  color: #034F82;
+  background: url(../images/title_bg07.jpg) repeat-x center;
+  text-decoration: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  padding: 10px 1px;
+  text-align: center;
+  display: table-cell;
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+}
+
+/* line 142, ../sass/Slide.scss */
+.groups a.button:hover {
+  background: url(../images/title_bg06.jpg) repeat-x;
+  color: #FFF;
+}
+
+/* line 144, ../sass/Slide.scss */
+.introBox h2 {
+  color: #155498;
+  font-size: 1em;
+  margin: 0;
+  padding: 0px 10px 10px 10px;
+  font-size: 15px;
+  font-weight: bold;
+  background: url(../images/CountryICon.png) no-repeat left 6px;
+}
+
+/* line 154, ../sass/Slide.scss */
+.introBox .link {
+  position: absolute;
+  top: 33px;
+  right: -1px;
+  padding: 6px 22px;
+  background-color: #034F82;
+  color: #FFF !important;
+  text-decoration: none;
+  z-index: 100;
+}
+
+/* line 164, ../sass/Slide.scss */
+.introBox .link:hover {
+  background-color: #1f92ce;
+}
+
+/* line 165, ../sass/Slide.scss */
+.introBox .source {
+  color: #929191;
+  text-align: right;
+  padding-top: 20px;
+  margin-bottom: -25px;
+}
+
+/* line 171, ../sass/Slide.scss */
+.des {
+  font-size: 13px;
+}
+
+/* line 172, ../sass/Slide.scss */
+.des li {
+  list-style-type: decimal;
+}
+
+/* line 175, ../sass/Slide.scss */
+.des ul {
+  margin-left: 20px;
+}
+
+/*# sourceMappingURL=Slide.css.map */

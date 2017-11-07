@@ -1,0 +1,24 @@
+<div class="area-customize submit <% if class_set %><%= class_set %><% end %>" data-index="<%= index %>" data-type="<%= $module %>" <% if func_set %> data-func="<%= func_set %>"<% end %> ><div class="in">
+	<% if header_text %>
+		<div class="hd"><div class="in">
+			<h4><span><a href="#"><%= header_text %></a></span></h4>
+		</div></div>
+	<% end %>
+	<div class="ct"><div class="in">
+		<div class="fieldset">
+			<span class="select" data-message="查詢">
+				<label>查詢</label>
+				<select>
+					<option data-href="" selected>請選擇</option>
+					<option data-href="http://www.google.com">全部資料</option>
+				</select>
+			</span>
+			<span class="text"><input type="text" placeholder="請輸入關鍵字..."></span>
+
+		</div>
+		<div class="fieldset btn">
+			<span class="submit"><input type="submit" value="送出查詢"></span>
+			<span class="reset"><input type="reset" value="清除"></span>
+		</div>
+	</div></div>
+</div></div>

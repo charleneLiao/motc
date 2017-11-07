@@ -1,0 +1,71 @@
+.list-text.user-tool {
+    display: none !important;
+}
+
+
+/*logo*/
+
+.PrintTop {
+    display: none;
+}
+
+#print_content {
+    width: 99% !important;
+}
+
+.MofaLeaderUrlLink .freeBox {
+    position: absolute !important;
+}
+
+
+/* line 5, ../sass/print.scss */
+
+
+/*.sys-root .list-text.user-tool {
+  display: none;
+}*/
+
+
+/* line 10, ../sass/print.scss */
+
+.sys-root .base-mobile {
+    display: none;
+}
+
+
+/* line 41, ../sass/print.scss */
+
+.sys-root .base-extend {
+    display: none;
+}
+
+
+/* line 102, ../sass/print.scss */
+
+.sys-root .base-header {
+    display: none;
+}
+
+
+/* line 163, ../sass/print.scss */
+
+.sys-root .base-footer {
+    display: none;
+}
+
+
+/* line 194, ../sass/print.scss */
+
+.sys-root .base-module-area {
+    display: none;
+}
+
+
+/* line 255, ../sass/print.scss */
+
+.sys-root .base-aside {
+    display: none;
+}
+
+
+/*# sourceMappingURL=print.css.map */

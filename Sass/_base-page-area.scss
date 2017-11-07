@@ -1,0 +1,37 @@
+//框架
+
+//內頁區塊================================================================
+
+.base-page-area {
+	margin: 0 0px 76px;
+background: url("../images/bg_inner.png") no-repeat center 350px;
+background-size: contain;
+	> .in {
+		wi
+		&:after {
+			@extend %clear;
+		}
+
+		> .hd {
+
+			> .in {
+
+			}
+
+			h3 {
+
+			}
+
+			span {
+
+			}
+		}
+
+		> .ct {
+
+			> .in {
+
+			}
+		}
+	}
+}

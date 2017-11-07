@@ -1,0 +1,197 @@
+//客製區塊
+//相簿(pchouse - 彥專)================================================================
+.area-customize.pchouse-album {
+    > .bg-drop-layout > .in,
+    > .in {
+        padding: 0 !important;
+    }
+    .hd {
+        @extend %header;
+        > .in {}
+        h4 {}
+        span {}
+        a {}
+    }
+    .ct {
+        > .in {
+            > ul {
+                padding-left: 0;
+                margin: 0;
+                list-style: none;
+                > li {
+                    display: block;
+                    border-bottom: 1px solid $light-gray;
+                    padding: 27px 23px;
+                    &:first-child {
+                        border-top: 1px solid $light-gray;
+                    }
+                }
+            }
+        }
+        /*a*/
+        .div {
+            display: block;
+            position: relative;
+            margin: 0 $interval-m;
+        }
+        .img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            span {
+                display: block;
+                width: 80px;
+                height: 80px;
+                border-radius: $border-radius;
+                background-size: 100% 100%;
+                background-position: center;
+                margin: -12px;
+            }
+            img {
+                display: none;
+            }
+        }
+        .essay {
+            margin-left: 86px;
+        }
+        .figcaption {
+            margin-right: $interval-m;
+            height: 54px;
+            overflow: hidden;
+            line-height: 27px;
+            display: table-cell;
+            vertical-align: middle;
+            span {
+                display: inline-block;
+                vertical-align: middle;
+                // word-break: break-all;
+            }
+        }
+        .label {
+            display: none;
+            ul {}
+            li {}
+            span {}
+        }
+        /*i*/
+        .mark {
+            display: none;
+        }
+        .p {
+            display: none;
+            p {}
+        }
+    }
+    .ft {
+        @extend %footer;
+        > .in {}
+        ul {}
+        li {}
+        span {}
+        a {}
+    }
+}
+
+// 快捷服務
+.area-customize.pchouse-album04 {
+    > .bg-drop-layout > .in,
+    > .in {
+        padding: 0 !important;
+    }
+    .hd {
+        @extend %header;
+        > .in {}
+        h4 {}
+        span {}
+        a {}
+    }
+    .ct {
+        > .in {
+            > ul {
+                padding-left: 0;
+                margin: 0;
+                list-style: none;
+                > li {
+                    display: inline-block;
+                    border-bottom: 1px solid $light-gray;
+                    padding: 27px 23px;
+                    width: 49%;
+                    box-sizing: border-box;
+                    margin: -2px;
+                    &:nth-child(odd) {
+                        border-right: 1px solid $light-gray;
+                    }
+                    @include media("phone") {
+                        width: 100%;
+                        &:nth-child(odd) {
+                            border-right: none;
+                        }
+                    }
+                }
+            }
+        }
+        /*a*/
+        .div {
+            display: block;
+            position: relative;
+            margin: 0 $interval-m;
+        }
+        .img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            span {
+                display: block;
+                width: 80px;
+                height: 80px;
+                border-radius: $border-radius;
+                background-size: 100% 100%;
+                background-position: center;
+                margin: -12px;
+            }
+            img {
+                display: none;
+            }
+        }
+        .essay {
+            margin-left: 86px;
+        }
+        .figcaption {
+            margin-right: $interval-m;
+            height: 54px;
+            overflow: hidden;
+            line-height: 27px;
+            display: table-cell;
+            vertical-align: middle;
+            span {
+                display: inline-block;
+                vertical-align: middle;
+                // word-break: break-all;
+            }
+        }
+        .label {
+            display: none;
+            ul {}
+            li {}
+            span {}
+        }
+        /*i*/
+        .mark {
+            display: none;
+        }
+        .p {
+            display: none;
+            p {}
+        }
+    }
+    .ft {
+        @extend %footer;
+        > .in {}
+        ul {}
+        li {}
+        span {}
+        a {}
+    }
+}

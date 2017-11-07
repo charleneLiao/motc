@@ -1,0 +1,208 @@
+//表單區塊
+//搜尋================================================================
+.area-form.search {
+    .base-mobile & {
+        > .bg-drop-layout > .in,
+        > .in {}
+        .hd {
+            display: none;
+            > .in {}
+            h4 {}
+            span {}
+            a {}
+        }
+        .ct {
+            > .in {}
+            .fieldset {
+                position: relative;
+                span {
+                    $icon-width: 36px;
+                    display: block;
+                    &.search {
+                        display: block;
+                        padding-right: $icon-width;
+                        input {
+                            display: block;
+                            width: 100%;
+                        }
+                    }
+                    &.submit {
+                        a {
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            bottom: 0;
+                            width: $icon-width;
+                            background-color: $mobile-ct-hover;
+                            @extend %hide-text;
+                            @include bg-to-pic('icon-pic/icon-w-search.png', false);
+                            &:hover {
+                                background: $mobile-ct-hover;
+                            }
+                        }
+                    }
+                }
+            }
+            .list {
+                display: none;
+                ul {}
+                li {}
+                span {}
+                a {}
+            }
+        }
+        .ft {
+            > .in {}
+            ul {
+                margin-top: $interval-m;
+            }
+            li {
+                display: block;
+                &.advanced {}
+            }
+            span {
+                display: block;
+            }
+            a {
+                display: block;
+                padding: $btn-padding;
+                background-color: $mobile-bt-light;
+                color: $white;
+                font-size: $font-size-s;
+                text-align: center;
+                border-radius: 5px;
+                &:hover {
+                    background: $mobile-ct-hover;
+                }
+                img{
+                    display: none;
+                }
+            }
+        }
+    }
+    .base-extend & {
+        display: inline-block;
+        vertical-align: middle;
+        text-align: left;
+        @include rwd(1024) {
+            margin: 0 24px 0 0;
+        }
+        @include media('mobile') {
+            display: none;
+        }
+        &.is-open {
+            .ct {
+                .list {
+                    display: block;
+                }
+            }
+        }
+        > .bg-drop-layout > .in,
+        > .in {
+            margin: 0;
+        }
+        .hd {
+            display: none;
+            > .in {}
+            h4 {}
+            span {}
+            a {}
+        }
+        .ct {
+            display: inline-block;
+            vertical-align: middle;
+            > .in {}
+            .fieldset {
+                position: relative;
+                @include js(false) {
+                    display: none;
+                }
+                span {
+                    $icon-width: 32px;
+                    display: block;
+                    &.search {
+                        display: block;
+                        width: 240px;
+                        input {
+                            display: block;
+                            width: 100%;
+                            border-width: 0;
+                            border-radius: 500px;
+                            color: $body-font-color;
+                            padding: 7px 11px;
+                        }
+                    }
+                    &.submit {
+                        a {
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            bottom: 0;
+                            width: $icon-width;
+                            background-color: $major-color;
+                            transition: $transition;
+                            @extend %hide-text;
+                            @include bg-to-pic('icon-pic/icon-w-search.png', false);
+                            border-radius: 50%;
+                            &:hover {
+                                background-color: deeper($major-color);
+                            }
+                        }
+                    }
+                }
+            }
+            .list {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                display: none;
+                color: $body-font-color;
+                z-index: 10;
+                ul {
+                    margin-top: $interval-m;
+                }
+                li {
+                    + li {}
+                    &:nth-child(odd) {
+                        a {
+                            background: $light;
+                        }
+                    }
+                }
+                span {
+                    display: block;
+                }
+                a {
+                    display: block;
+                    padding: $btn-padding;
+                    background-color: $white;
+                    transition: $transition;
+                    &:hover {
+                        background-color: $light;
+                    }
+                }
+            }
+        }
+        .ft {
+            display: inline-block;
+            vertical-align: middle;
+            padding-left: $interval-s;
+            > .in {}
+            ul {}
+            li {
+                &.advanced {}
+            }
+            span {}
+            a {
+                font-size: $font-size-s;
+                @include js(false) {
+                    @extend %btn;
+                }
+                img {
+                    display: none;
+                }
+            }
+        }
+    }
+}

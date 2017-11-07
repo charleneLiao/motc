@@ -1,0 +1,46 @@
+//框架
+//固定佈局================================================================
+.base-wrapper {
+    // background-color: $minor-color;
+    margin-top: -40px;
+    @include media('mobile') {
+        margin-top: $rwd-btn-size;
+    }
+    > .in {
+        .inner-wrapper {
+            width: 1000px;
+            margin: 0 auto;
+            box-shadow: 0px 7px 12px 4px #9a9c9f;
+            overflow: hidden;
+            background-color: $white;
+            position: relative;
+            @include rwd(1000) {
+                width: 100%;
+            }
+            &:after {
+                width: 200px;
+                background: #eeeeee;
+                position: absolute;
+                left: 0;
+                content: "";
+                height: 100%;
+                top: 0;
+                z-index: 0;
+                padding-bottom: 54px;
+            }
+            @include media("mobile") {
+                &:after{
+                    display: none;
+                }
+            }
+        }
+        > .hd {
+            > .in {}
+            h3 {}
+            span {}
+        }
+        > .ct {
+            > .in {}
+        }
+    }
+}
